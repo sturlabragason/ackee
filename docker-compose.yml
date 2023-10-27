@@ -19,3 +19,8 @@ services:
     restart: always
     volumes:
       - ./data:/data/db
+
+networks:
+  default:
+    external:
+      name: my_shared_network
